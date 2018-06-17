@@ -1,5 +1,5 @@
 # DefMon - Deface Monitor
-* Recursively crawls a website given a start url and a list of allowed domains
+* Recursively crawl a website given a start url and a list of allowed domains using scrapy
 * For each link found, store the hash of the page content in a MongoDB and look for a group of wordlists in this content
 * If the page has been checked before (ie, its hash is in the db), DefMon will first check only the hashes due to performance issues
 * Only if the hashes are not identical look for defacement indicators
@@ -57,12 +57,14 @@ In order to reset your database, please run:
 **NOTICE: this will clear all your database. Use it carefully or dragons might pop up from your screen.**
 
 # DISCLAIMER
-This tool under active developed. No guarantees are provided.
+This tool is under active developed. No guarantees are provided.
 
 # CONTRIBUTION
-No requiremets! Feel free to help :)
+No requirements! Feel free to help :)
 
 ## TODO
 * Take screenshot of defaced pages and send by e-mail
+* Implement OTP for images defacements
+* Implement AI for learning new indicators (cheers if you do this one)
 * Set credentials in environment variables
 * TESTS!!!

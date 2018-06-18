@@ -71,17 +71,17 @@ class PwnedPipeline(object):
             print(colored('[!!] Page {} seems to have been hacked!', 'red').format(item['link']))
             print(colored('[+] Saving suspicious page into log file', 'yellow'))
             with open('log/{}'.format(item['link'].split('/')[2]), 'a+') as f:
-                f.write(item['timestamp']+
-                        ' - '+
-                        item['link']+
-                        '\n')
+                f.write(str(item['timestamp'])+
+                    ' - '+
+                    item['link']+
+                    '\n')
 
             print(colored('[+] Sending e-mail alert', 'yellow'))
-            print(SendMail(
+            SendMail(
                 item,
                 "marcos.valle01@gmail.com",
                 "ATTENTION REQUIRED: {}".format(item['link'].split('/')[2])
-                ).send())
+                ).send()
             return item
         else:
             raise DropItem("Page {} -- OK".format(item['link']))

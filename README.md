@@ -35,6 +35,18 @@ ITEM_PIPELINES ={
 # USAGE
 
 ~~~
+***************************************
+*  ____        __ __  __              *
+* |  _ \  ___ / _|  \/  | ___  _ __   *
+* | | | |/ _ \ |_| |\/| |/ _ \| '_ \  *
+* | |_| |  __/  _| |  | | (_) | | | | *
+* |____/ \___|_| |_|  |_|\___/|_| |_| *
+*                             *
+***************************************
+* DefMon Release 0.1                  *
+* Coded by @__mvalle__                *
+***************************************
+
 usage: ./run.py [-h] --domain DOMAIN --url URL
 
 Deface Monitor: recursively crawl a domain and check for defaced pages

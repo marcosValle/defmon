@@ -1,3 +1,5 @@
+![alt text](https://image.ibb.co/d7RgSy/defmon.png)
+
 # DefMon - Deface Monitor
 * Recursively crawl a website given a start url and a list of allowed domains using scrapy
 * For each link found, store the hash of the page content in a MongoDB and look for a group of wordlists in this content
